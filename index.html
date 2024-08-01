@@ -1,4 +1,3 @@
-
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,234 +21,408 @@
 <link rel="stylesheet" href="https://fastshopwr-a.akamaihd.net/spot/metrics/metrics.css">
 
 <style>
- /* PROPIEDADE DEFAULT PARA A PAGINA */
-*{ margin: 0; padding: 0; box-sizing: border-box; }
-#corpo {display: block;position: relative;margin: 0 auto; width: 100%;max-width: 1600px;box-sizing: border-box; padding: 0; font-family: "Neuton", serif; color: #000000;overflow: hidden; background:#FFFFFF; text-align: justify;} #corpo h1{
-text-align: center; padding: 1%; }
-a{   text-decoration: none;   color:#FFFFFF; }
-a:hover{   text-decoration: none;   color:#FFFFFF; }
-/* PADRÃO PRA DEIXAR A PRIMEIRA LETRA MAUISCULA */
-.dropcap {  font-size: 4em;     line-height: 0.7;     padding-right: 0.2vw; vertical-align: sub;  }
-/* BANNER TOPO */
-#corpo .banner_topo::before{ padding: 0; padding-top: 40.0625%;} .container { max-width: 800px; margin: 0 auto; background-color: #fff; padding: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
-/* APRESENTA DO ARTISTA TEXTO */
-#corpo .apresenta-artista { width: 100%; text-align: center; font-size: 24px; background: #FAF9FA; margin-bottom: 2%; padding: 1%; }
-#corpo .apresenta-artista h2{ font-size: 1.9vw; font-family: "Open Sans", sans-serif;; font-weight: 400; }
-#corpo .apresenta-artista p{ font-size: 1.5vw;  font-family: "Open Sans", sans-serif;}
-#corpo hr{ width: 55%; margin: 0 auto 3%; }
+  /* PROPIEDADE DEFAULT PARA A PAGINA */
+  * {    margin: 0;    padding: 0;    box-sizing: border-box;  }
 
-/* CONTEUDO PRINCIPAL */
-#corpo .content{ width: 75%; margin:0 auto; }
- 
-#corpo .content .bloco-texto::before{ width: 0%; padding:15% 16%; }
-#corpo .content .bloco-texto picture img{ width: 100%; }
-#corpo .content .bloco-texto picture{ width: 30%; margin-top: 3%; }
-#corpo .content .bloco-texto{ display: flex; align-items: center; }
+  #corpo {    display: block;    position: relative;    margin: 0 auto;    width: 100%;    max-width: 1600px;    box-sizing: border-box;    padding: 0;    font-family: "Neuton", serif;    color: #000000;    overflow: hidden;    background: #FFFFFF;    text-align: justify;  }
 
-/* BANNER MEIO */
-#corpo .content .banner-meio::before{ padding: 18%; }
-#corpo .content .banner-meio picture img{ width: 100%; }
-#corpo .content .texto-banner-meio{ margin-bottom: 4%; }
-/* ROTATIVO DE IMAGENS */
-#corpo .content .bloco-imagem-flex::before{ padding: 17%; } 
-#corpo .content .bloco-imagem-flex{ width: 100%; }
-#corpo .content .bloco-imagem-flex .fast_rotativo picture{ position: relative; }
-#corpo .content .bloco-imagem-flex .fast_rotativo a{ position: absolute; width: 100%; height:100%; background: transparent; top: 0; }
-/* ROTATIVO PRODUTOS */
- 
-#corpo .content .product-section .bloco-product::before{ padding: 19%; }
-#corpo .content .product-section { text-align: center; margin: 6% 0; }
-#corpo .content .product-section h2{ margin-bottom: 2%; }
-#corpo .content .product-section .bloco-product{ width: 96%; margin: 0 auto;}
-#corpo .content .product-section .bloco-product .fast_rotativo-2 picture{ position: relative; }
-#corpo .content .product-section .bloco-product .fast_rotativo a{ position: absolute; width: 100%; height:100%; background: transparent; top: 0; left:0; }
-.button { display: inline-block; background-color: #000; color: #fff; padding: 10px 100px; padding: 1.5% 8%; text-decoration: none; border-radius: 999px; margin-top: 5%;  font-family: "Open Sans", sans-serif;}
-@media (min-width: 1600px){
+  #corpo h1 {    text-align: center;    padding: 1%;  }
+  #corpo p {  font-size:1.3em;}
+  a {    text-decoration: none;    color: #FFFFFF;  }
 
-#corpo p{ font-size: 1.4em; } 
-}
+  a:hover {    text-decoration: none;    color: #FFFFFF;  }
 
-@media (max-width: 1100px) {
+  /* PADRÃO PRA DEIXAR A PRIMEIRA LETRA MAUISCULA */
+  .dropcap {    float: inline-start;    font-size: 3.7em;    line-height: 0.7;    padding-right: 0.2vw;    vertical-align: sub;  }
 
-#corpo h1{ font-size: 1em; padding: 3%; }
-/* BANNER TOPO */
-#corpo .banner_topo::before { padding-top: 71.0625%; }
-/* TEXTO APRESENTACAO */
-#corpo .apresenta-artista h2 { font-size: 3.2vw; font-weight: 400; }
-#corpo hr.topo{ display: none; }
-/* CONTETUDO PRINCIPAL */
-#corpo .content { width: 100%; margin: 0 auto; }
-#corpo .content p{ width:95%; margin: 0 auto 3%; }
-#corpo .content .bloco-texto::before { width: 71%; padding: 41%; }
-#corpo .content .bloco-texto{ display:flex; flex-direction:column; }
-#corpo .content .bloco-texto .texto{ margin-bottom:3%; }
-#corpo .content .bloco-texto picture { width: 95%; margin: 0 auto; }
-/* BANNER MEIO */
-#corpo .content .banner-meio::before { padding: 40%; }
-/* ROTATIVO IMAGENS PAI */
-#corpo .content .bloco-imagem-flex::before { padding: 61%; }
-#corpo .content .bloco-imagem-flex{ width: 100%; margin-left:2%; }
-/* ROTATIVO PRODUTO */
-#corpo .content .product-section .bloco-product::before { padding: 47%; }
-#corpo hr.botton{ width: 100%; }
-#corpo .content .product-section .bloco-product{ width: 100%; margin-left: 2%; }
-/* BOTÃO FINAL LP */
-.button{ padding:2% 25%; font-size: 5vw; }
+  /* BANNER TOPO */
+  #corpo .banner_topo::before {    padding: 0;    padding-top: 41.0625%;  }
 
-.fast_rotativo .owl-dots { display: block; position: relative; margin: 10% auto; width: 100%; text-align: center; }
-.fast_rotativo .owl-dots .owl-dot { display: inline-block; position: relative; outline: none;}
-.fast_rotativo .owl-dots .owl-dot span { display: block; outline: 1px solid #aaaaaa; width: 8px; height: 8px; margin: 0 5px; border-radius: 250px; }
-.fast_rotativo .owl-dots .owl-dot:hover span, 
-.fast_rotativo .owl-dots .owl-dot.active span { background-color: #8f8e8e; } 
- 
-}
+  .container {    max-width: 800px;    margin: 0 auto;    background-color: #fff;    padding: 20px;    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  }
+
+  /* APRESENTA DO ARTISTA TEXTO */
+  #corpo .apresenta-artista {    width: 100%;    text-align: center;    font-size: 24px;    background: #FAF9FA;    margin-bottom: 2%;    padding: 1%;  }
+
+  #corpo .apresenta-artista h2 {    font-size: 1.9vw;    font-family: "Open Sans", sans-serif;    ;    font-weight: 400;  }
+
+  #corpo .apresenta-artista p {    font-size: 1.5vw;    font-family: "Open Sans", sans-serif;  }
+
+  #corpo hr {    width: 55%;    margin: 0 auto 3%;  }
+
+  /* CONTEUDO PRINCIPAL */
+  #corpo .content {    width: 75%;    margin: 0 auto;  }
+
+  #corpo .content .bloco-texto::before {    width: 0%;    padding: 15% 16%;  }
+
+  #corpo .content .bloco-texto picture img {    width: 100%;  }
+
+  #corpo .content .bloco-texto picture {    width: 30%;    margin-top: 3%;  }
+
+  #corpo .content .bloco-texto {    display: flex;    align-items: center;  }
+
+  #corpo .content .bloco-texto .texto p {    margin-bottom: 3%;  }
+
+  /* BANNER MEIO */
+  #corpo .content .banner-meio::before {    padding: 17%;  }
+
+  #corpo .content .banner-meio picture img {    width: 100%;  }
+
+  #corpo .content .texto-banner-meio {    width: 85%;    margin: 2% auto;    text-align: center;  }
+
+  #corpo .content .texto-banner-meio-complemento {    margin: 0 0 3%;  }
+
+  /* ROTATIVO DE IMAGENS */
+  #corpo .content .bloco-imagem-flex::before {    padding: 15%;  }
+
+  #corpo .content .bloco-imagem-flex {    width: 100%;  }
+
+  #corpo .content .bloco-imagem-flex .fast_rotativo picture {    position: relative;  }
+
+  #corpo .content .bloco-imagem-flex .fast_rotativo a {    position: absolute;    width: 100%;    height: 100%;    background: transparent;    top: 0;  }
+
+  /* TEXTOS */
+  #corpo p.texto-rotativo-pai {    width: 98%;    margin: 0 auto 3%;    text-align: center;  }
+
+  #corpo p.texto-rotativo-pai-02 {    text-align: center;    margin: 0 auto 5%;  }
+
+  /* ROTATIVO PRODUTOS */
+
+  #corpo .content .product-section .bloco-product::before {    padding: 19%;  }
+
+  #corpo .content .product-section {    text-align: center;    margin: 2% 0;  }
+
+  #corpo .content .product-section h2 {    margin-bottom: 2%;  }
+
+  #corpo .content .product-section .bloco-product {    width: 96%;    margin: 0 auto;  }
+
+  #corpo .content .product-section .bloco-product .fast_rotativo-2 picture {    position: relative;  }
+
+  #corpo .content .product-section .bloco-product .fast_rotativo a {    position: absolute;    width: 100%;    height: 100%;    background: transparent;    top: 0;    left: 0;  }
+  
+  #corpo .content .product-section .bloco-product p{ font-size: 1em;}
+
+  .mt {    margin-top: 4%;  }
+
+  .mb{margin-bottom: 3%;}
+
+  .button {    display: inline-block;    background-color: #000;    color: #fff;    padding: 10px 100px;    padding: 1.5% 8%;    text-decoration: none;    border-radius: 999px;    margin: 5%;    font-family: "Open Sans", sans-serif;  }
+
+  @media (min-width: 1600px) {
+    #corpo p {      font-size: 1.4em;    }
+  }
+
+  @media (max-width: 1100px) {
+
+    #corpo h1 {      font-size: 1.4em;      padding: 3%;    }
+
+    #corpo p {      font-size: 1.4em;    }
+
+    #corpo .apresenta-artista p {      font-size: 2.3vw;    }
+
+    /* BANNER TOPO */
+    #corpo .banner_topo::before {      padding-top: 71.0625%;    }
+
+    /* Letra mauscula */
+    .dropcap {      float: inline-start;      font-size: 3.7em;      line-height: 0.7;      padding-right: 0.2vw;      vertical-align: sub;    }
+
+    /* TEXTO APRESENTACAO */
+    #corpo .apresenta-artista h2 {      font-size: 3.2vw;      font-weight: 400;    }
+
+    #corpo hr.topo {      display: none;    }
+
+    /* CONTETUDO PRINCIPAL */
+    #corpo .content {      width: 100%;      margin: 0 auto;    }
+
+    #corpo .content p {      width: 87%;      margin: 0 auto 3%;    }
+
+    #corpo .content .bloco-texto::before {      width: 71%;      padding: 41%;    }
+
+    #corpo .content .bloco-texto {      display: flex;      flex-direction: column;    }
+
+    #corpo .content .bloco-texto .texto {      margin-bottom: 3%;    }
+
+    #corpo .content .bloco-texto picture {      width: 95%;      margin: 0 auto;    }
+
+    /* BANNER MEIO */
+    #corpo .content .banner-meio::before {      padding: 40%;    }
+
+    /* ROTATIVO IMAGENS PAI */
+    #corpo .content .bloco-imagem-flex::before {      padding: 58%;    }
+
+    #corpo .content .bloco-imagem-flex {      width: 100%;      margin-left: 2%;    }
+
+    /* TEXTO */
+    #corpo .content .texto-banner-meio {      width: 95%;    }
+
+    #corpo .content .texto-banner-meio {      margin: 2% auto;    }
+
+    #corpo .content .texto-banner-meio-complemento {      margin: 0 auto 3%;    }
+
+    /* ROTATIVO PRODUTO */
+    #corpo .content .product-section .bloco-product::before {      padding: 46%;    }
+
+    #corpo hr.botton {      width: 100%;    }
+
+    #corpo .content .product-section .bloco-product {      width: 100%;      margin-left: 2%;    }
+
+   #corpo .content .product-section .bloco-product p {font-size: 1.3em;}
+    /* BOTÃO FINAL LP */
+    .button {      padding: 2% 25%;      font-size: 5vw;    }
+
+    .fast_rotativo .owl-dots {      display: block;      position: relative;      margin: 4% auto 7%;      width: 100%;      text-align: center;    }
+
+    .fast_rotativo .owl-dots .owl-dot {      display: inline-block;      position: relative;      outline: none;    }
+
+    .fast_rotativo .owl-dots .owl-dot span {      display: block;      outline: 1px solid #aaaaaa;      width: 8px;      height: 8px;      margin: 0 5px;      border-radius: 250px;    }
+
+    .fast_rotativo .owl-dots .owl-dot:hover span,
+    .fast_rotativo .owl-dots .owl-dot.active span {
+      background-color: #8f8e8e;
+    }
+
+  }
 </style>
 
 <div id="corpo">
- <h1 class="title">Título Título Título Título</h1>
- <div class="wrapper-aspect-ratio banner_topo">
- <picture class="inner">
- <source media="(max-width: 1100px)"
- srcset=" files/imagem_topo_mobile.png">
- <img width="100%" height="auto"
- src="  files/imagem_topo.png"
- alt="Foto Ale D`Agostino">
- </picture>
- </div>
- <div class="apresenta-artista">
- <h2>Ale D`Agostino</h2>
- <p>Consultor de Restaurantes</p>
- </div>
- <hr class="topo">
- <div class="content">
- <p><span class="dropcap">L</span>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
- dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
- book. It has survived notonly five centuries, but also the leap into electronic typesetting, remaining essentially
- unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
- recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
- 
- 
- <div class="wrapper-aspect-ratio bloco-texto">
- <picture class="inner">
- <source media="(max-width: 1100px)" srcset=" files/imagem_01_mobile.png">
- <img src=" files/imagem_01.png" alt="Foto Ale D`Agostino com filho" class="additional-images">
- </picture>
- <div class="texto">
- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
- dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
- book. It has survived notonly five centuries, but also the leap into electronic typesetting, remaining essentially
- unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
- recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
- </div>
- </div>
- <div class="wrapper-aspect-ratio banner-meio">
- <picture class="inner">
- <source media="(max-width: 1100px)" srcset="files/imagem_02_mobile.png">
- <img src="files/imagem_02.png" alt="foto Ale D`Agostino" class="additional-images">
- </picture>
- </div>
- <p class="texto-banner-meio"><span class="dropcap">L</span>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
- dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
- book. It has survived notonly five centuries, but also the leap into electronic typesetting, remaining essentially
- unchanged. It was popularised in the 1960s</p>
- <!-- ROTATIVO IMAGENS PAI -->
- <div class="wrapper-aspect-ratio bloco-imagem-flex">
- <div class="inner">
- <div id="fast_rotativo" class="owl-carousel fast_rotativo">
- <picture >
- <source media="(max-width: 1100px)" srcset="files/imagem_rotativo_mobile_01.png">
- <img src=" files/imagem_rotativo_01.png" alt="Foto Ale D`Agostino" class="additional-images">
- <!-- <a href="#" class="link"></a> -->
+  <h1 class="title">Para ensinar a sentir é preciso sensibilidade</h1>
+  <div class="wrapper-aspect-ratio banner_topo">
+    <picture class="inner">
+      <source media="(max-width: 1100px)"
+        srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files2/imagem_topo_mobile.png">
+      <img width="100%" height="auto" src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files2/imagem_topo.png"
+        alt="Foto Ale D`Agostino com filho">
+    </picture>
+  </div>
+  <div class="apresenta-artista">
+    <h2>por Ale D`Agostino</h2>
+    <p>Fundador da APTK, pai do Antonio de 12 anos e apaixonado por comida e bebida</p>
+  </div>
+  <hr class="topo">
+  <div class="content">
+    <p><span class="dropcap">O</span>que vamos comer hoje? Essa é uma das perguntas que guiam a relação e a educação do nosso Food Lover, Ale D’Agostino,
+    fundador da APTK Spirits, Apothek Cocktails & Co, bartender premiadíssimo, com mais de 20 anos de experiência em
+    criações de drinks e pai do Antonio, de 12. Na visão do criativo gastronômico e pai, a cozinha é a sala de aula da alma.
+    É lá o lugar mais</p>
+    <p>importante para se construir laços eternos, pois é comendo e bebendo, que compartilhamos memórias, histórias, gostos,
+    opiniões, visões e, construimos assim, não apenas uma relação de afeto com quem se senta ao nosso lado mas, mais
+    importante que isso, é neste lugar que temos a chance de aprendermos e ensinarmos importantes valores. </p>
 
- </picture>
- <picture >
- <source media="(max-width: 1100px)" srcset="files/imagem_rotativo_mobile_02.png">
- <img src="  files/imagem_rotativo_02.png" alt="Foto Ale D`Agostino com filho" class="additional-images">
- <!-- <a href="#" class="link"></a> -->
- </picture>
- <picture >
- <source media="(max-width: 1100px)" srcset="files/imagem_rotativo_mobile_03.png">
- <img src="  files/imagem_rotativo_03.png" alt="Foto Ale D`Agostino com filho" class="additional-images">
- <!-- <a href="#" class="link"></a> -->
- </picture>
- </div>
 
- </div>
- </div>
- <hr class="botton">
- <div class="product-section">
- <h2>Pet Tech Lover</h2>
- <!-- ROTATIVO PRODUTOS -->
- <div class="wrapper-aspect-ratio bloco-product">
- <div class="inner">
- <div id="fast_rotativo-2" class="owl-carousel fast_rotativo">
- <picture>
- <source media="(max-width: 1100px)" srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files/imagem_rotativo_produto_01_mobile.png">
- <img src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files/imagem_rotativo_produto_01_mobile.png" alt="Produtos Fast shop campanha dias dos pais" class="additional-images">
- <a href="#" class="link"></a>
- </picture>
- <picture>
- <source media="(max-width: 1100px)" srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files/imagem_rotativo_produto_02_mobile.png">
- <img src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files/imagem_rotativo_produto_02_mobile.png" alt="Produtos Fast shop campanha dias dos pais" class="additional-images">
- <a href="#" class="link"></a>
- </picture>
- <picture>
- <source media="(max-width: 1100px)" srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files/imagem_rotativo_produto_03_mobile.png">
- <img src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files/imagem_rotativo_produto_03_mobile.png" alt="Produtos Fast shop campanha dias dos pais" class="additional-images">
- <a href="#" class="link"></a>
- </picture>
- </div>
- 
- </div>
- </div>
- 
- <a href="#" class="button">Saiba mais</a>
- </div>
- </div>
- 
+    <div class="wrapper-aspect-ratio bloco-texto">
+      <picture class="inner">
+        <source media="(max-width: 1100px)"
+          srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files2/imagem_01.png">
+        <img src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files2/imagem_01.png"
+          alt="Foto Ale D`Agostino com filho" class="additional-images">
+      </picture>
+      <div class="texto">
+        <p>Nas palavras do Ale, “Antes do ato de comer, vem uma série de outros atos tão importantes e saborosos quanto, como o ato
+        cozinhar, o de servir, o de plantar, o de pesquisar a receita, e são através destes atos que vêm antes de beber ou
+        comer, que consigo transmitir para o Antonio, não apenas uma educação de habilidades, mas uma educação de
+        sensibilidades." <br>
+        Ele continua: “Sem a educação das sensibilidades, todas as outras habilidades são tolas e sem sentido. O conhecimento, o
+        sentimento e as sensações que eles trazem, nos dão as razões para viver".</p>
+        <p>Se a arte pode ganhar diversos significados nos olhos daquele que a vê, imagine a reflexão de um pai artista
+        gastronômico, quando transporta esses significados para a educação de seu filho.</p>
+      </div>
+    </div>
+    <p class="mb">“O ato de cozinhar ou de criar drinks, é a escola perfeita para ensinar sobre sensações e seus diversos efeitos, ao
+    Antonio”, ele diz. Foi nesse ambiente de cozinha, ou melhor, nessa escola que o Antonio cresceu. Comer faz parte da
+    educação, pois é uma escola de aprendizados, é sobre respeitar cada ingrediente e sua jornada até a nossa boca. É na
+    cozinha, que todos os nossos cinco sentidos são ativados juntos: visão, paladar, olfato, tato e audição, este último é
+    muito importante, pois precisamos entender a sensação também do outro. Acredito que um sexto sentido para se adicionar
+    aos cinco humanos é a tecnologia, através dela conseguimos refinar os nossos outros cinco." </p>
+    <div class="wrapper-aspect-ratio banner-meio">
+      <picture class="inner">
+        <source media="(max-width: 1100px)"
+          srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files2/imagem_02_mobile.png">
+        <img src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files2/imagem_02.png"
+          alt="foto Ale D`Agostino com familia" class="additional-images">
+      </picture>
+    </div>
+    <p class="texto-banner-meio">O alquimista continua: ”Os eletrodomésticos têm desempenhado um papel fundamental na humanidade. E não estou falando de
+    economia de tempo, pelo contrário, estou falando sobre colocar tempo no que realmente importará e transformará as
+    próximas gerações, a educação do sentir.” </p>
+    
+    <!-- ROTATIVO IMAGENS PAI -->
+    <div class="wrapper-aspect-ratio bloco-imagem-flex">
+      <div class="inner">
+        <div id="fast_rotativo" class="owl-carousel fast_rotativo">
+          <picture>
+            <source media="(max-width: 1100px)"
+              srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files2/imagem_rotativo_mobile_01.png">
+            <img src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files2/imagem_rotativo_01.png"
+              alt="Foto Ale D`Agostino com filho" class="additional-images">
+            <!-- <a href="#" class="link"></a> -->
+
+          </picture>
+          <picture>
+            <source media="(max-width: 1100px)"
+              srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files2/imagem_rotativo_mobile_02.png">
+            <img src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files2/imagem_rotativo_02.png"
+              alt="Foto Ale D`Agostino com filho" class="additional-images">
+            <!-- <a href="#" class="link"></a> -->
+          </picture>
+          <picture>
+            <source media="(max-width: 1100px)"
+              srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files2/imagem_rotativo_mobile_03.png">
+            <img src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files2/imagem_rotativo_03.png"
+              alt="Foto Ale D`Agostino com filho" class="additional-images">
+            <!-- <a href="#" class="link"></a> -->
+          </picture>
+          <picture>
+            <source media="(max-width: 1100px)"
+              srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files2/imagem_rotativo_mobile_01.png">
+            <img src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files2/imagem_rotativo_01.png"
+              alt="Foto Ale D`Agostino com filho" class="additional-images">
+            <!-- <a href="#" class="link"></a> -->
+
+          </picture>
+          <picture>
+            <source media="(max-width: 1100px)"
+              srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files2/imagem_rotativo_mobile_02.png">
+            <img src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files2/imagem_rotativo_02.png"
+              alt="Foto Ale D`Agostino com filho" class="additional-images">
+            <!-- <a href="#" class="link"></a> -->
+          </picture>
+          <picture>
+            <source media="(max-width: 1100px)"
+              srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files2/imagem_rotativo_mobile_03.png">
+            <img src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files2/imagem_rotativo_03.png"
+              alt="Foto Ale D`Agostino com filho" class="additional-images">
+            <!-- <a href="#" class="link"></a> -->
+          </picture>
+        </div>
+
+      </div>
+    </div>
+
+    <p class="texto-rotativo-pai">“O universo da gastronomia é um ambiente que me conecta com o Antonio, muitas vezes vamos às lojas da Fast para ver o
+    que tem de novidade em geladeira, fogão e que tipo de recetas podemos criar juntos.”</p>
+    <p class="texto-rotativo-pai">“Fiquei feliz quando o Antonio pediu de Natal uma batedeira KitchenAid. Entender qual universo une você ao seu filho é
+    importante para construção de memórias e momentos de qualidade juntos”, conta Ale.  </p>
+    <p class="texto-rotativo-pai">"Cozinhar é uma escola de sensibilidades, que ainda hoje é mal vista em uma sociedade moldada por preceitos
+    patriarcais."</p>
+    <p class="texto-rotativo-pai">"O criativo de gastronomia se preocupa com o outro e sai da individualidade. Quando existe a pergunta: o que vamos
+    comer, vem uma comunicação e relação que se forma e se desenvolve através do paladar."</p>
+
+    <hr class="botton">
+    <div class="product-section">
+      <h2>Pai Food Lover</h2>
+      <!-- ROTATIVO PRODUTOS -->
+      <div class="wrapper-aspect-ratio bloco-product">
+        <div class="inner">
+          <div id="fast_rotativo-2" class="owl-carousel fast_rotativo">
+            <picture>
+              <source media="(max-width: 1100px)"
+                srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files2/imagem_rotativo_produto_01_mobile.png">
+              <img
+                src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files2/imagem_rotativo_produto_01_mobile.png"
+                alt="Produtos Fast shop campanha dias dos pais" class="additional-images">
+              <p class="mt">Cafeteira Nespresso Essenza Mini Preta</p>
+              <a href="https://www.fastshop.com.br/web/p/d/NLC30BR2PTO_PRD/cafeteira-nespresso-essenza-mini-preta-para-cafe-espresso-c30-br"
+                class="link"></a>
+            </picture>
+            <picture>
+              <source media="(max-width: 1100px)"
+                srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files2/imagem_rotativo_produto_02_mobile.png">
+              <img
+                src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files2/imagem_rotativo_produto_02_mobile.png"
+                alt="Produtos Fast shop campanha dias dos pais" class="additional-images">
+              <p class="mt">Mixer de Mão KitchenAid Artisan Empire Red</p>
+              <a href="https://www.fastshop.com.br/web/p/d/KIKEB53VRM_PRD/mixer-de-mao-kitchenaid-empire-red-com-velocidade-variavel-capacidade-de-07-litros-keb53avana"
+                class="link"></a>
+            </picture>
+            <picture>
+              <source media="(max-width: 1100px)"
+                srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files2/imagem_rotativo_produto_03_mobile.png">
+              <img
+                src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files2/imagem_rotativo_produto_03_mobile.png"
+                alt="Produtos Fast shop campanha dias dos pais" class="additional-images">
+              <p class="mt">Adega Brastemp para 12 Garrafas</p>
+              <a href="https://www.fastshop.com.br/web/p/d/BRBZC12BE_PRD/adega-brastemp-para-12-garrafas-preta-iluminacao-led-com-painel-eletronico-bzc12be"
+                class="link"></a>
+            </picture>
+            <picture>
+              <source media="(max-width: 1100px)"
+                srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files2/imagem_rotativo_produto_01_mobile.png">
+              <img
+                src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files2/imagem_rotativo_produto_01_mobile.png"
+                alt="Produtos Fast shop campanha dias dos pais" class="additional-images">
+              <p class="mt">Cafeteira Nespresso Essenza Mini Preta</p>
+              <a href="https://www.fastshop.com.br/web/p/d/NLC30BR2PTO_PRD/cafeteira-nespresso-essenza-mini-preta-para-cafe-espresso-c30-br"
+                class="link"></a>
+            </picture>
+            <picture>
+              <source media="(max-width: 1100px)"
+                srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files2/imagem_rotativo_produto_02_mobile.png">
+              <img
+                src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files2/imagem_rotativo_produto_02_mobile.png"
+                alt="Produtos Fast shop campanha dias dos pais" class="additional-images">
+              <p class="mt">Mixer de Mão KitchenAid Artisan Empire Red</p>
+              <a href="https://www.fastshop.com.br/web/p/d/KIKEB53VRM_PRD/mixer-de-mao-kitchenaid-empire-red-com-velocidade-variavel-capacidade-de-07-litros-keb53avana"
+                class="link"></a>
+            </picture>
+            <picture>
+              <source media="(max-width: 1100px)"
+                srcset="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files2/imagem_rotativo_produto_03_mobile.png">
+              <img
+                src="https://fastshopwr-a.akamaihd.net/pages/2024/07/pais/files2/imagem_rotativo_produto_03_mobile.png"
+                alt="Produtos Fast shop campanha dias dos pais" class="additional-images">
+              <p class="mt">Adega Brastemp para 12 Garrafas</p>
+              <a href="https://www.fastshop.com.br/web/p/d/BRBZC12BE_PRD/adega-brastemp-para-12-garrafas-preta-iluminacao-led-com-painel-eletronico-bzc12be"
+                class="link"></a>
+            </picture>
+          </div>
+
+        </div>
+      </div>
+
+      <a href="https://www.fastshop.com.br/web/c/4611686018425561515/lista_food_lover" class="button">Saiba mais</a>
+    </div>
+  </div>
+
 </div>
 
 <script>
- var carouselDelay = 1000;
+  var carouselDelay = 1000;
 
- if (carouselDelay) {
-  setTimeout(function () {
-   document.querySelector('#fast_rotativo').style.display = 'block';
+  if (carouselDelay) {
+    setTimeout(function () {
+      document.querySelector('#fast_rotativo').style.display = 'block';
 
- $('#fast_rotativo').owlCarousel({
+      $('#fast_rotativo').owlCarousel({
         items: 1,
         loop: true,
         smartSpeed: 600,
         responsiveClass: true,
         nav: false,
-        dots:true,
+        dots: true,
         navText: ['<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/esquerda.png">', '<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/direita.png">'],
-        responsive: { 0: { items: 1.5, margin: 20, mouseDrag: true }, 1100: { items: 3, mouseDrag: false, margin: 20, autoplay:false } },
+        responsive: { 0: { items: 1.5, margin: 20, mouseDrag: true }, 1100: { items: 3, mouseDrag: false, margin: 20, autoplay: false } },
         autoplay: true,
         autoplayTimeout: 5000,
         autoplayHoverPause: true
-        });
- }, carouselDelay);
- }
- if (carouselDelay) {
-  setTimeout(function () {
-   document.querySelector('#fast_rotativo').style.display = 'block';
+      });
+    }, carouselDelay);
+  }
+  if (carouselDelay) {
+    setTimeout(function () {
+      document.querySelector('#fast_rotativo').style.display = 'block';
 
- $('#fast_rotativo-2').owlCarousel({
-    items: 1,
-    loop: true,
-    smartSpeed: 600,
-    responsiveClass: true,
-    nav: false,
-    navText: ['<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/esquerda.png">', '<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/direita.png">'],
-    responsive: { 0: { items: 1.5, margin: 20, mouseDrag: true }, 1100: { items: 3, mouseDrag: false, margin: 20, autoplay:false } },
-    autoplay: true,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: true
-    });
- }, carouselDelay);
- }
+      $('#fast_rotativo-2').owlCarousel({
+        items: 1,
+        loop: true,
+        smartSpeed: 600,
+        responsiveClass: true,
+        nav: false,
+        navText: ['<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/esquerda.png">', '<img src="https://fastshopwr-a.akamaihd.net/pages/2023/12/image/direita.png">'],
+        responsive: { 0: { items: 1.5, margin: 20, mouseDrag: true }, 1100: { items: 3, mouseDrag: false, margin: 20, autoplay: false } },
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true
+      });
+    }, carouselDelay);
+  }
 
 </script>
-
- 
